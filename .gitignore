@@ -1,0 +1,7 @@
+.venv/
+models/
+.night/
+.env
+__pycache__/
+*.pyc
+data/audio/*.wav
