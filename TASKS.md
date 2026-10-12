@@ -45,7 +45,7 @@
   Никогда не закрывать автоматически. Приёмка: на синтетических парах предложения появляются,
   на звонке без упоминаний — нет.
 
-- [ ] T08. Конвейер CLI: `python -m callagree.run --transcript data/transcripts/call_001.json`
+- [x] T08. Конвейер CLI: `python -m callagree.run --transcript data/transcripts/call_001.json`
   и `python -m callagree.run --audio file.wav --phone +375... --datetime 2026-10-13T14:05`
   → обновляет data/store.json (клиенты, звонки, обязательства, предложения закрыть с учётом
   предыдущих звонков клиента). `--reset` для очистки. Приёмка: прогон всех синтетических

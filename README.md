@@ -11,8 +11,20 @@ python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 cp .env.example .env          # необязательно: без .env работает mock
 .venv/bin/pytest              # тесты
+.venv/bin/python -m callagree.run --reset --all   # вся синтетика → data/store.json
 .venv/bin/streamlit run app.py
 ```
+
+## Конвейер (CLI)
+
+```bash
+.venv/bin/python -m callagree.run --transcript data/transcripts/call_001.json
+.venv/bin/python -m callagree.run --audio file.wav --phone +375291234567 --datetime 2026-10-13T14:05
+.venv/bin/python -m callagree.run --reset          # очистить хранилище
+```
+
+Второй звонок тому же клиенту даёт «предложения закрыть» по обязательствам из прежних звонков.
+`--backend mock|openai` переопределяет `LLM_BACKEND`; `--audio` заработает после подключения ASR.
 
 ## Структура
 
@@ -24,7 +36,7 @@ cp .env.example .env          # необязательно: без .env рабо
 | `callagree/llm.py`, `extract.py`, `prompts/` | извлечение обязательств (mock / OpenAI-совместимый API) |
 | `callagree/closing.py` | предложения закрыть по следующему звонку |
 | `callagree/asr.py` | стерео wav → расшифровка (T-one / GigaAM) |
-| `callagree/pipeline.py`, `store.py` | конвейер и хранилище `data/store.json` |
+| `callagree/pipeline.py`, `run.py`, `store.py` | конвейер, CLI и хранилище `data/store.json` |
 | `app.py` | интерфейс Streamlit |
 | `data/transcripts`, `data/gold` | синтетические звонки и эталон |
 | `scripts/build_synthetic.py` | сборка синтетики (тексты и разметка — в скрипте) |
