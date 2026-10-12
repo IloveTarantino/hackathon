@@ -1,0 +1,206 @@
+{
+  "call_id": "call_006",
+  "commitments": [
+    {
+      "id": "call_006_c1",
+      "client_phone": "+375336667788",
+      "call_id": "call_006",
+      "debtor": "employee",
+      "debtor_name": null,
+      "creditor": "client",
+      "action": "уточнить наличие коробок на складе и перезвонить",
+      "deadline": {
+        "raw": null,
+        "type": "none",
+        "value": null,
+        "resolved_start": null,
+        "resolved_end": null,
+        "flags": [
+          "no_deadline"
+        ]
+      },
+      "amount": null,
+      "condition": null,
+      "status": "firm",
+      "replaces": null,
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "employee",
+          "t": 19.7,
+          "quote": "я уточню наличие на складе и вам перезвоню",
+          "match_score": 100.0
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "call_006_c2",
+      "client_phone": "+375336667788",
+      "call_id": "call_006",
+      "debtor": "client",
+      "debtor_name": null,
+      "creditor": "employee",
+      "action": "взять около пятидесяти коробок под капкейки",
+      "deadline": {
+        "raw": null,
+        "type": "none",
+        "value": null,
+        "resolved_start": null,
+        "resolved_end": null,
+        "flags": [
+          "no_deadline"
+        ]
+      },
+      "amount": null,
+      "condition": null,
+      "status": "tentative",
+      "replaces": null,
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "client",
+          "t": 26.0,
+          "quote": "мы наверное возьмем штук пятьдесят под капкейки но это пока не точно",
+          "match_score": 100.0
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "call_006_c3",
+      "client_phone": "+375336667788",
+      "call_id": "call_006",
+      "debtor": "employee",
+      "debtor_name": null,
+      "creditor": "client",
+      "action": "сделать скидку 10 %",
+      "deadline": {
+        "raw": null,
+        "type": "none",
+        "value": null,
+        "resolved_start": null,
+        "resolved_end": null,
+        "flags": [
+          "no_deadline"
+        ]
+      },
+      "amount": null,
+      "condition": "если закажете от пятисот штук",
+      "status": "conditional",
+      "replaces": null,
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "employee",
+          "t": 33.8,
+          "quote": "если закажете от пятисот штук сделаем скидку десять процентов",
+          "match_score": 100.0
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "call_006_c4",
+      "client_phone": "+375336667788",
+      "call_id": "call_006",
+      "debtor": "third_party",
+      "debtor_name": "Сергей со склада",
+      "creditor": "client",
+      "action": "завезти накладную по прошлой поставке",
+      "deadline": {
+        "raw": "послезавтра",
+        "type": "day_after_tomorrow",
+        "value": null,
+        "resolved_start": "2026-10-29",
+        "resolved_end": "2026-10-29",
+        "flags": []
+      },
+      "amount": null,
+      "condition": null,
+      "status": "firm",
+      "replaces": null,
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "employee",
+          "t": 54.6,
+          "quote": "сергей со склада завезет вам накладную послезавтра",
+          "match_score": 100.0
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "call_006_c5",
+      "client_phone": "+375336667788",
+      "call_id": "call_006",
+      "debtor": "client",
+      "debtor_name": null,
+      "creditor": "employee",
+      "action": "подписать договор на следующий год",
+      "deadline": {
+        "raw": "через неделю",
+        "type": "in_weeks",
+        "value": "1",
+        "resolved_start": "2026-11-03",
+        "resolved_end": "2026-11-03",
+        "flags": []
+      },
+      "amount": null,
+      "condition": null,
+      "status": "firm",
+      "replaces": null,
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "client",
+          "t": 70.1,
+          "quote": "договор подпишем через неделю",
+          "match_score": 100.0
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "call_006_c6",
+      "client_phone": "+375336667788",
+      "call_id": "call_006",
+      "debtor": "employee",
+      "debtor_name": null,
+      "creditor": "client",
+      "action": "прислать новый прайс",
+      "deadline": {
+        "raw": "в ближайшее время",
+        "type": "vague",
+        "value": null,
+        "resolved_start": null,
+        "resolved_end": null,
+        "flags": [
+          "vague"
+        ]
+      },
+      "amount": null,
+      "condition": null,
+      "status": "firm",
+      "replaces": null,
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "employee",
+          "t": 73.9,
+          "quote": "я вам еще новый прайс скину в ближайшее время",
+          "match_score": 100.0
+        }
+      ],
+      "verified": true
+    }
+  ],
+  "closures": []
+}

@@ -1,0 +1,104 @@
+{
+  "call_id": "call_003",
+  "commitments": [
+    {
+      "id": "call_003_c1",
+      "client_phone": "+375447654321",
+      "call_id": "call_003",
+      "debtor": "employee",
+      "debtor_name": null,
+      "creditor": "client",
+      "action": "обеспечить приезд мастера (с 10 до 14)",
+      "deadline": {
+        "raw": "завтра с десяти до четырнадцати",
+        "type": "tomorrow",
+        "value": null,
+        "resolved_start": "2026-10-20",
+        "resolved_end": "2026-10-20",
+        "flags": []
+      },
+      "amount": null,
+      "condition": null,
+      "status": "firm",
+      "replaces": null,
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "employee",
+          "t": 27.6,
+          "quote": "мастер приедет завтра с десяти до четырнадцати",
+          "match_score": 100.0
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "call_003_c2",
+      "client_phone": "+375447654321",
+      "call_id": "call_003",
+      "debtor": "client",
+      "debtor_name": null,
+      "creditor": "employee",
+      "action": "прислать код от двери в Viber",
+      "deadline": {
+        "raw": "сегодня вечером",
+        "type": "today",
+        "value": null,
+        "resolved_start": "2026-10-19",
+        "resolved_end": "2026-10-19",
+        "flags": []
+      },
+      "amount": null,
+      "condition": null,
+      "status": "firm",
+      "replaces": null,
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "client",
+          "t": 41.9,
+          "quote": "я код вам пришлю в вайбер сегодня вечером",
+          "match_score": 100.0
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "call_003_c3",
+      "client_phone": "+375447654321",
+      "call_id": "call_003",
+      "debtor": "employee",
+      "debtor_name": null,
+      "creditor": "client",
+      "action": "заменить деталь сразу на месте",
+      "deadline": {
+        "raw": null,
+        "type": "none",
+        "value": null,
+        "resolved_start": null,
+        "resolved_end": null,
+        "flags": [
+          "no_deadline"
+        ]
+      },
+      "amount": null,
+      "condition": "если нужная деталь будет у мастера с собой",
+      "status": "conditional",
+      "replaces": null,
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "employee",
+          "t": 47.3,
+          "quote": "если нужная деталь будет у мастера с собой он заменит ее сразу на месте",
+          "match_score": 100.0
+        }
+      ],
+      "verified": true
+    }
+  ],
+  "closures": []
+}

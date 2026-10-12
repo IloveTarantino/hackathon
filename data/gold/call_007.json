@@ -1,0 +1,212 @@
+{
+  "call_id": "call_007",
+  "commitments": [
+    {
+      "id": "call_007_c1",
+      "client_phone": "+375257778899",
+      "call_id": "call_007",
+      "debtor": "client",
+      "debtor_name": null,
+      "creditor": "employee",
+      "action": "оплатить счёт за стаканы",
+      "deadline": {
+        "raw": "до пятого",
+        "type": "day_of_month",
+        "value": "5",
+        "resolved_start": "2026-11-05",
+        "resolved_end": "2026-11-05",
+        "flags": []
+      },
+      "amount": {
+        "value": 12400.0,
+        "currency": "BYN",
+        "approximate": false,
+        "raw": "двенадцать четыреста"
+      },
+      "condition": null,
+      "status": "replaced",
+      "replaces": null,
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "client",
+          "t": 14.7,
+          "quote": "счет на двенадцать четыреста мы оплатим до пятого",
+          "match_score": 100.0
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "call_007_c2",
+      "client_phone": "+375257778899",
+      "call_id": "call_007",
+      "debtor": "client",
+      "debtor_name": null,
+      "creditor": "employee",
+      "action": "оплатить счёт за стаканы",
+      "deadline": {
+        "raw": "до десятого",
+        "type": "day_of_month",
+        "value": "10",
+        "resolved_start": "2026-11-10",
+        "resolved_end": "2026-11-10",
+        "flags": []
+      },
+      "amount": {
+        "value": 12400.0,
+        "currency": "BYN",
+        "approximate": false,
+        "raw": "двенадцать четыреста"
+      },
+      "condition": null,
+      "status": "firm",
+      "replaces": "call_007_c1",
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "client",
+          "t": 14.7,
+          "quote": "до пятого не успеем давай до десятого",
+          "match_score": 100.0
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "call_007_c3",
+      "client_phone": "+375257778899",
+      "call_id": "call_007",
+      "debtor": "employee",
+      "debtor_name": null,
+      "creditor": "client",
+      "action": "отгрузить стаканы",
+      "deadline": {
+        "raw": "на следующей неделе",
+        "type": "next_week",
+        "value": null,
+        "resolved_start": "2026-11-02",
+        "resolved_end": "2026-11-08",
+        "flags": []
+      },
+      "amount": null,
+      "condition": null,
+      "status": "firm",
+      "replaces": null,
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "employee",
+          "t": 24.6,
+          "quote": "стаканы мы вам отгрузим на следующей неделе",
+          "match_score": 100.0
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "call_007_c4",
+      "client_phone": "+375257778899",
+      "call_id": "call_007",
+      "debtor": "employee",
+      "debtor_name": null,
+      "creditor": "client",
+      "action": "отправить закрывающие документы курьером",
+      "deadline": {
+        "raw": "тридцатого октября",
+        "type": "explicit_date",
+        "value": "30.10",
+        "resolved_start": "2026-10-30",
+        "resolved_end": "2026-10-30",
+        "flags": []
+      },
+      "amount": null,
+      "condition": null,
+      "status": "firm",
+      "replaces": null,
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "employee",
+          "t": 36.8,
+          "quote": "закрывающие документы отправлю тридцатого октября курьером",
+          "match_score": 100.0
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "call_007_c5",
+      "client_phone": "+375257778899",
+      "call_id": "call_007",
+      "debtor": "client",
+      "debtor_name": null,
+      "creditor": "employee",
+      "action": "подписать акт сверки",
+      "deadline": {
+        "raw": "двадцать девятого числа",
+        "type": "day_of_month",
+        "value": "29",
+        "resolved_start": "2026-11-29",
+        "resolved_end": "2026-11-29",
+        "flags": [
+          "same_day_of_month"
+        ]
+      },
+      "amount": null,
+      "condition": null,
+      "status": "firm",
+      "replaces": null,
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "client",
+          "t": 39.9,
+          "quote": "акт сверки мы вам подпишем двадцать девятого числа",
+          "match_score": 100.0
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "call_007_c6",
+      "client_phone": "+375257778899",
+      "call_id": "call_007",
+      "debtor": "employee",
+      "debtor_name": null,
+      "creditor": "client",
+      "action": "положить крышки к стаканам в отгрузку",
+      "deadline": {
+        "raw": null,
+        "type": "none",
+        "value": null,
+        "resolved_start": null,
+        "resolved_end": null,
+        "flags": [
+          "no_deadline"
+        ]
+      },
+      "amount": null,
+      "condition": null,
+      "status": "firm",
+      "replaces": null,
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "employee",
+          "t": 56.4,
+          "quote": "крышки положим обязательно я лично проверю",
+          "match_score": 100.0
+        }
+      ],
+      "verified": true
+    }
+  ],
+  "closures": []
+}

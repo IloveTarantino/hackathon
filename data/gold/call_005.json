@@ -1,0 +1,151 @@
+{
+  "call_id": "call_005",
+  "commitments": [
+    {
+      "id": "call_005_c1",
+      "client_phone": "+375293334455",
+      "call_id": "call_005",
+      "debtor": "employee",
+      "debtor_name": null,
+      "creditor": "client",
+      "action": "завезти образцы тканей и готовый комплект на объект",
+      "deadline": {
+        "raw": "в пятницу",
+        "type": "weekday",
+        "value": "пятница",
+        "resolved_start": "2026-10-30",
+        "resolved_end": "2026-10-30",
+        "flags": [
+          "same_weekday_ambiguous"
+        ]
+      },
+      "amount": null,
+      "condition": null,
+      "status": "firm",
+      "replaces": null,
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "employee",
+          "t": 19.7,
+          "quote": "образцы тканей и готовый комплект я вам завезу в пятницу на объект",
+          "match_score": 100.0
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "call_005_c2",
+      "client_phone": "+375293334455",
+      "call_id": "call_005",
+      "debtor": "client",
+      "debtor_name": null,
+      "creditor": "employee",
+      "action": "согласовать спецификацию с директором и сообщить",
+      "deadline": {
+        "raw": "на этой неделе",
+        "type": "this_week",
+        "value": null,
+        "resolved_start": "2026-10-23",
+        "resolved_end": "2026-10-25",
+        "flags": [
+          "interval_collapsed"
+        ]
+      },
+      "amount": null,
+      "condition": null,
+      "status": "firm",
+      "replaces": null,
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "client",
+          "t": 34.7,
+          "quote": "спецификацию я с директором согласую на этой неделе и вам отпишусь",
+          "match_score": 100.0
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "call_005_c3",
+      "client_phone": "+375293334455",
+      "call_id": "call_005",
+      "debtor": "client",
+      "debtor_name": null,
+      "creditor": "employee",
+      "action": "внести стопроцентную предоплату",
+      "deadline": {
+        "raw": null,
+        "type": "none",
+        "value": null,
+        "resolved_start": null,
+        "resolved_end": null,
+        "flags": [
+          "no_deadline"
+        ]
+      },
+      "amount": null,
+      "condition": null,
+      "status": "declined",
+      "replaces": null,
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "client",
+          "t": 44.6,
+          "quote": "нет стопроцентную предоплату мы вносить не будем",
+          "match_score": 100.0
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "call_005_c4",
+      "client_phone": "+375293334455",
+      "call_id": "call_005",
+      "debtor": "client",
+      "debtor_name": null,
+      "creditor": "employee",
+      "action": "внести половину оплаты",
+      "deadline": {
+        "raw": "до конца месяца",
+        "type": "end_of_month",
+        "value": null,
+        "resolved_start": "2026-10-31",
+        "resolved_end": "2026-10-31",
+        "flags": []
+      },
+      "amount": {
+        "value": 12000.0,
+        "currency": "BYN",
+        "approximate": true,
+        "raw": "где-то двенадцать тысяч рублей"
+      },
+      "condition": null,
+      "status": "firm",
+      "replaces": null,
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "client",
+          "t": 65.0,
+          "quote": "хорошо половину мы внесем до конца месяца",
+          "match_score": 100.0
+        },
+        {
+          "speaker": "client",
+          "t": 56.3,
+          "quote": "половину это где-то двенадцать тысяч рублей",
+          "match_score": 100.0
+        }
+      ],
+      "verified": true
+    }
+  ],
+  "closures": []
+}

@@ -1,0 +1,139 @@
+{
+  "call_id": "call_001",
+  "commitments": [
+    {
+      "id": "call_001_c1",
+      "client_phone": "+375291234567",
+      "call_id": "call_001",
+      "debtor": "employee",
+      "debtor_name": null,
+      "creditor": "client",
+      "action": "прислать коммерческое предложение",
+      "deadline": {
+        "raw": "до пятницы",
+        "type": "weekday",
+        "value": "пятница",
+        "resolved_start": "2026-10-16",
+        "resolved_end": "2026-10-16",
+        "flags": []
+      },
+      "amount": null,
+      "condition": null,
+      "status": "replaced",
+      "replaces": null,
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "employee",
+          "t": 23.4,
+          "quote": "коммерческое предложение я вам пришлю до пятницы",
+          "match_score": 100.0
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "call_001_c2",
+      "client_phone": "+375291234567",
+      "call_id": "call_001",
+      "debtor": "employee",
+      "debtor_name": null,
+      "creditor": "client",
+      "action": "прислать коммерческое предложение",
+      "deadline": {
+        "raw": "к среде",
+        "type": "weekday",
+        "value": "среда",
+        "resolved_start": "2026-10-14",
+        "resolved_end": "2026-10-14",
+        "flags": []
+      },
+      "amount": null,
+      "condition": null,
+      "status": "firm",
+      "replaces": "call_001_c1",
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "employee",
+          "t": 37.9,
+          "quote": "нет давайте лучше к среде в среду до обеда кп будет у вас на почте",
+          "match_score": 100.0
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "call_001_c3",
+      "client_phone": "+375291234567",
+      "call_id": "call_001",
+      "debtor": "client",
+      "debtor_name": null,
+      "creditor": "employee",
+      "action": "перевести первую часть оплаты",
+      "deadline": {
+        "raw": "до двадцатого",
+        "type": "day_of_month",
+        "value": "20",
+        "resolved_start": "2026-10-20",
+        "resolved_end": "2026-10-20",
+        "flags": []
+      },
+      "amount": {
+        "value": 5000.0,
+        "currency": "BYN",
+        "approximate": true,
+        "raw": "тысяч пять"
+      },
+      "condition": null,
+      "status": "firm",
+      "replaces": null,
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "client",
+          "t": 53.1,
+          "quote": "по оплате первую часть тысяч пять переведем до двадцатого",
+          "match_score": 100.0
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "call_001_c4",
+      "client_phone": "+375291234567",
+      "call_id": "call_001",
+      "debtor": "third_party",
+      "debtor_name": "бухгалтер Светлана",
+      "creditor": "employee",
+      "action": "перезвонить и продиктовать реквизиты",
+      "deadline": {
+        "raw": "завтра",
+        "type": "tomorrow",
+        "value": null,
+        "resolved_start": "2026-10-14",
+        "resolved_end": "2026-10-14",
+        "flags": []
+      },
+      "amount": null,
+      "condition": null,
+      "status": "firm",
+      "replaces": null,
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "client",
+          "t": 66.6,
+          "quote": "наш бухгалтер светлана вам перезвонит завтра и все продиктует",
+          "match_score": 100.0
+        }
+      ],
+      "verified": true
+    }
+  ],
+  "closures": []
+}

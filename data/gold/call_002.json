@@ -1,0 +1,117 @@
+{
+  "call_id": "call_002",
+  "commitments": [
+    {
+      "id": "call_002_c1",
+      "client_phone": "+375291234567",
+      "call_id": "call_002",
+      "debtor": "employee",
+      "debtor_name": null,
+      "creditor": "client",
+      "action": "выставить счёт на предоплату и отправить договор",
+      "deadline": {
+        "raw": "сегодня",
+        "type": "today",
+        "value": null,
+        "resolved_start": "2026-10-15",
+        "resolved_end": "2026-10-15",
+        "flags": []
+      },
+      "amount": null,
+      "condition": null,
+      "status": "firm",
+      "replaces": null,
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "employee",
+          "t": 24.6,
+          "quote": "счет на предоплату выставлю сегодня и вместе с ним отправлю договор",
+          "match_score": 100.0
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "call_002_c2",
+      "client_phone": "+375291234567",
+      "call_id": "call_002",
+      "debtor": "client",
+      "debtor_name": null,
+      "creditor": "employee",
+      "action": "подписать договор",
+      "deadline": {
+        "raw": "на следующей неделе",
+        "type": "next_week",
+        "value": null,
+        "resolved_start": "2026-10-19",
+        "resolved_end": "2026-10-25",
+        "flags": []
+      },
+      "amount": null,
+      "condition": null,
+      "status": "firm",
+      "replaces": null,
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "client",
+          "t": 30.3,
+          "quote": "договор мы подпишем на следующей неделе",
+          "match_score": 100.0
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "call_002_c3",
+      "client_phone": "+375291234567",
+      "call_id": "call_002",
+      "debtor": "client",
+      "debtor_name": null,
+      "creditor": "employee",
+      "action": "взять вторую партию стеллажей для филиала в Борисове",
+      "deadline": {
+        "raw": null,
+        "type": "none",
+        "value": null,
+        "resolved_start": null,
+        "resolved_end": null,
+        "flags": [
+          "no_deadline"
+        ]
+      },
+      "amount": null,
+      "condition": null,
+      "status": "tentative",
+      "replaces": null,
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "client",
+          "t": 48.2,
+          "quote": "может быть мы еще возьмем вторую партию на филиал в борисове но это не точно",
+          "match_score": 100.0
+        }
+      ],
+      "verified": true
+    }
+  ],
+  "closures": [
+    {
+      "commitment_id": "call_001_c2",
+      "speaker": "client",
+      "t": 10.2,
+      "quote": "да кп получили спасибо"
+    },
+    {
+      "commitment_id": "call_001_c4",
+      "speaker": "employee",
+      "t": 16.0,
+      "quote": "бухгалтер ваша вчера звонила реквизиты мы сверили"
+    }
+  ]
+}

@@ -173,3 +173,19 @@ class Store(_Model):
         if len(calls) != len(set(calls)):
             raise ValueError("повторяющиеся call_id в calls")
         return self
+
+
+# ---------- Эталон разметки (data/gold/<call_id>.json) ----------
+
+class GoldClosure(_Model):
+    """Ожидаемое предложение закрыть: обязательство из прошлого звонка + цитата из этого."""
+    commitment_id: str
+    speaker: Speaker
+    t: float
+    quote: str
+
+
+class GoldCall(_Model):
+    call_id: str
+    commitments: list[Commitment] = Field(default_factory=list)
+    closures: list[GoldClosure] = Field(default_factory=list)

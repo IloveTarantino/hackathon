@@ -1,0 +1,120 @@
+{
+  "call_id": "call_004",
+  "commitments": [
+    {
+      "id": "call_004_c1",
+      "client_phone": "+375447654321",
+      "call_id": "call_004",
+      "debtor": "employee",
+      "debtor_name": null,
+      "creditor": "client",
+      "action": "привезти насос",
+      "deadline": {
+        "raw": "через три дня",
+        "type": "in_days",
+        "value": "3",
+        "resolved_start": "2026-10-24",
+        "resolved_end": "2026-10-24",
+        "flags": []
+      },
+      "amount": null,
+      "condition": null,
+      "status": "firm",
+      "replaces": null,
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "employee",
+          "t": 27.7,
+          "quote": "насос мы привезем через три дня",
+          "match_score": 100.0
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "call_004_c2",
+      "client_phone": "+375447654321",
+      "call_id": "call_004",
+      "debtor": "employee",
+      "debtor_name": null,
+      "creditor": "client",
+      "action": "прислать счёт на электронную почту",
+      "deadline": {
+        "raw": "сегодня",
+        "type": "today",
+        "value": null,
+        "resolved_start": "2026-10-21",
+        "resolved_end": "2026-10-21",
+        "flags": []
+      },
+      "amount": null,
+      "condition": null,
+      "status": "firm",
+      "replaces": null,
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "employee",
+          "t": 44.0,
+          "quote": "счет я вам пришлю сегодня на электронную почту",
+          "match_score": 100.0
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "call_004_c3",
+      "client_phone": "+375447654321",
+      "call_id": "call_004",
+      "debtor": "client",
+      "debtor_name": null,
+      "creditor": "employee",
+      "action": "оплатить счёт за насос и работу",
+      "deadline": {
+        "raw": "до конца недели",
+        "type": "end_of_week",
+        "value": null,
+        "resolved_start": "2026-10-25",
+        "resolved_end": "2026-10-25",
+        "flags": []
+      },
+      "amount": {
+        "value": 120.0,
+        "currency": "BYN",
+        "approximate": false,
+        "raw": "сто двадцать рублей"
+      },
+      "condition": null,
+      "status": "firm",
+      "replaces": null,
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "client",
+          "t": 49.3,
+          "quote": "я оплачу до конца недели",
+          "match_score": 100.0
+        }
+      ],
+      "verified": true
+    }
+  ],
+  "closures": [
+    {
+      "commitment_id": "call_003_c1",
+      "speaker": "client",
+      "t": 10.1,
+      "quote": "мастер вчера приезжал все посмотрел"
+    },
+    {
+      "commitment_id": "call_003_c2",
+      "speaker": "client",
+      "t": 22.5,
+      "quote": "код я вам тогда отправила в вайбер"
+    }
+  ]
+}
