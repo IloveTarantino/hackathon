@@ -27,7 +27,9 @@ cp .env.example .env          # необязательно: без .env рабо
 | `callagree/pipeline.py`, `store.py` | конвейер и хранилище `data/store.json` |
 | `app.py` | интерфейс Streamlit |
 | `data/transcripts`, `data/gold` | синтетические звонки и эталон |
-| `docs/` | питч, демо, заметки по установке |
+| `scripts/build_synthetic.py` | сборка синтетики (тексты и разметка — в скрипте) |
+| `scripts/make_stereo.py` | две записи голосов → стерео 8 кГц A-law |
+| `docs/` | вводные для записи (`RECORDING_BRIEFS.md`), питч, демо, заметки по установке |
 
 ## Настройка LLM
 
