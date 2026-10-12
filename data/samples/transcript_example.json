@@ -1,0 +1,34 @@
+{
+  "call_id": "call_001",
+  "call_datetime": "2026-10-13T14:05:00+03:00",
+  "client_phone": "+375291234567",
+  "client_name": "Иван Петрович",
+  "direction": "outbound",
+  "audio_path": null,
+  "segments": [
+    {
+      "speaker": "employee",
+      "start": 12.4,
+      "end": 17.9,
+      "text": "коммерческое предложение я вам пришлю до пятницы"
+    },
+    {
+      "speaker": "client",
+      "start": 20.1,
+      "end": 26.3,
+      "text": "хорошо по оплате первую часть тысяч пять переведём до двадцатого"
+    },
+    {
+      "speaker": "employee",
+      "start": 63.0,
+      "end": 65.0,
+      "text": "хотя знаете"
+    },
+    {
+      "speaker": "employee",
+      "start": 65.2,
+      "end": 68.0,
+      "text": "кп давайте лучше к среде"
+    }
+  ]
+}

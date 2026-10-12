@@ -1,0 +1,32 @@
+{
+  "id": "c_0003",
+  "client_phone": "+375291234567",
+  "call_id": "call_001",
+  "debtor": "employee",
+  "debtor_name": null,
+  "creditor": "client",
+  "action": "прислать коммерческое предложение",
+  "deadline": {
+    "raw": "к среде",
+    "type": "weekday",
+    "value": "среда",
+    "resolved_start": "2026-10-14",
+    "resolved_end": "2026-10-14",
+    "flags": []
+  },
+  "amount": null,
+  "condition": null,
+  "status": "firm",
+  "replaces": "c_0001",
+  "review": "pending",
+  "lifecycle": "open",
+  "evidence": [
+    {
+      "speaker": "employee",
+      "t": 65.2,
+      "quote": "КП давайте лучше к среде",
+      "match_score": 96
+    }
+  ],
+  "verified": true
+}

@@ -1,0 +1,139 @@
+{
+  "clients": {
+    "+375291234567": {
+      "name": "Иван Петрович",
+      "phone": "+375291234567"
+    }
+  },
+  "calls": [
+    {
+      "call_id": "call_001",
+      "client_phone": "+375291234567",
+      "datetime": "2026-10-13T14:05:00+03:00",
+      "audio_path": null,
+      "transcript_path": "data/samples/transcript_example.json"
+    },
+    {
+      "call_id": "call_002",
+      "client_phone": "+375291234567",
+      "datetime": "2026-10-15T10:30:00+03:00",
+      "audio_path": null,
+      "transcript_path": null
+    }
+  ],
+  "commitments": [
+    {
+      "id": "c_0001",
+      "client_phone": "+375291234567",
+      "call_id": "call_001",
+      "debtor": "employee",
+      "debtor_name": null,
+      "creditor": "client",
+      "action": "прислать коммерческое предложение",
+      "deadline": {
+        "raw": "до пятницы",
+        "type": "weekday",
+        "value": "пятница",
+        "resolved_start": "2026-10-16",
+        "resolved_end": "2026-10-16",
+        "flags": []
+      },
+      "amount": null,
+      "condition": null,
+      "status": "replaced",
+      "replaces": null,
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "employee",
+          "t": 12.4,
+          "quote": "коммерческое предложение я вам пришлю до пятницы",
+          "match_score": 100
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "c_0002",
+      "client_phone": "+375291234567",
+      "call_id": "call_001",
+      "debtor": "client",
+      "debtor_name": null,
+      "creditor": "employee",
+      "action": "перевести первую часть оплаты",
+      "deadline": {
+        "raw": "до двадцатого",
+        "type": "day_of_month",
+        "value": "20",
+        "resolved_start": "2026-10-20",
+        "resolved_end": "2026-10-20",
+        "flags": []
+      },
+      "amount": {
+        "value": 5000,
+        "currency": "BYN",
+        "approximate": true,
+        "raw": "тысяч пять"
+      },
+      "condition": null,
+      "status": "firm",
+      "replaces": null,
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "client",
+          "t": 20.1,
+          "quote": "первую часть тысяч пять переведём до двадцатого",
+          "match_score": 100
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "c_0003",
+      "client_phone": "+375291234567",
+      "call_id": "call_001",
+      "debtor": "employee",
+      "debtor_name": null,
+      "creditor": "client",
+      "action": "прислать коммерческое предложение",
+      "deadline": {
+        "raw": "к среде",
+        "type": "weekday",
+        "value": "среда",
+        "resolved_start": "2026-10-14",
+        "resolved_end": "2026-10-14",
+        "flags": []
+      },
+      "amount": null,
+      "condition": null,
+      "status": "firm",
+      "replaces": "c_0001",
+      "review": "pending",
+      "lifecycle": "open",
+      "evidence": [
+        {
+          "speaker": "employee",
+          "t": 65.2,
+          "quote": "КП давайте лучше к среде",
+          "match_score": 96
+        }
+      ],
+      "verified": true
+    }
+  ],
+  "close_suggestions": [
+    {
+      "id": "s_0001",
+      "commitment_id": "c_0003",
+      "call_id": "call_002",
+      "speaker": "client",
+      "t": 8.4,
+      "quote": "да, КП получили, спасибо",
+      "status": "pending",
+      "match_score": null
+    }
+  ]
+}
