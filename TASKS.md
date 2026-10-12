@@ -1,6 +1,6 @@
 # TASKS.md — очередь задач (бери первую с [ ], отмечай [x] или [~] при блокере)
 
-- [ ] T01. Каркас проекта: .venv, requirements.txt, пакет callagree/ (модули: contracts, dates,
+- [x] T01. Каркас проекта: .venv, requirements.txt, пакет callagree/ (модули: contracts, dates,
   quotes, llm, extract, closing, asr, pipeline, store), app.py, tests/, .env.example
   (LLM_BASE_URL, LLM_MODEL, LLM_API_KEY, LLM_BACKEND=mock|openai, ASR_ENGINE=tone|gigaam),
   .gitignore (.venv, models/, .night/, *.wav >5MB, .env), README.md с командами.

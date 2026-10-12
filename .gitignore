@@ -4,4 +4,9 @@ models/
 .env
 __pycache__/
 *.pyc
+.pytest_cache/
+# аудио не коммитим (файлы >5 МБ запрещены); маленькие тестовые — в tests/fixtures
 data/audio/*.wav
+*.wav
+!tests/fixtures/*.wav
+data/store.json

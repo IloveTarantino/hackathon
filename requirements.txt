@@ -1,0 +1,7 @@
+# Ядро (конвейер, тесты, интерфейс). ASR ставится отдельно — см. docs/SETUP_NOTES.md
+pydantic>=2.7
+rapidfuzz>=3.9
+python-dotenv>=1.0
+openai>=1.40
+streamlit>=1.38
+pytest>=8.0
